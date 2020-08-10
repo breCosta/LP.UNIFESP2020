@@ -1,0 +1,12 @@
+#include <stdio.h>
+ 
+int main() {
+    int codA, numA, codB, numB; //num é peças
+    double valorA, valorB, total; //valor unitario das peças
+    scanf("%d %d %lf", &codA, &numA, &valorA);
+    scanf("%d %d %lf", &codB, &numB, &valorB);
+    total=numA*valorA+numB*valorB;
+    printf("VALOR A PAGAR: R$ %0.2lf\n", total);
+ 
+    return 0;
+}
