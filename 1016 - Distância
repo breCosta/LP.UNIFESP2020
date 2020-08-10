@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+int main() {
+    int distancia, Y, tempoMin;
+    tempoMin=2;
+    scanf("%d", &distancia);
+    Y=tempoMin*distancia;
+    printf("%d minutos\n", Y);
+    
+    
+ 
+    return 0;
+}
