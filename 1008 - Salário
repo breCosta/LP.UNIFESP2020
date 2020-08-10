@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+int main() {
+    int numFunc, horasFunc;
+    float valorHora, calculo;
+    scanf("%d %d", &numFunc, &horasFunc);
+    scanf("%f", &valorHora);
+    calculo=horasFunc*valorHora;
+    printf("NUMBER = %d\n", numFunc);
+    printf("SALARY = U$ %0.2f\n", calculo);
+    
+      return 0;
+}
