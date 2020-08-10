@@ -1,0 +1,12 @@
+#include <stdio.h>
+ 
+int main() {
+    int X; // distancia em km
+    float Y, consumo; // combustivel gasto em litros e consumo
+    scanf("%d %f", &X, &Y);
+    consumo=X/Y;
+    printf("%0.3f km/l\n", consumo);
+    
+    
+    return 0;
+}
