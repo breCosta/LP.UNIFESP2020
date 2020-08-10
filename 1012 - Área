@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main() {
+    double A, B, C, pi, aTri, aCir, aTra, aQua, aRet; //calcula as areas
+    pi=3.14159;
+    scanf("%lf %lf %lf", &A, &B, &C);
+    aTri=(A*C)/2; // area triangulo
+    aCir=pi*(C*C); // area circulo
+    aTra=((A+B)*C)/2; // area trapezio
+    aQua=B*B; // area quadrado
+    aRet=A*B; // area retangulo
+    printf("TRIANGULO: %0.3lf\n", aTri);
+    printf("CIRCULO: %0.3lf\n", aCir);
+    printf("TRAPEZIO: %0.3lf\n", aTra);
+    printf("QUADRADO: %0.3lf\n", aQua);
+    printf("RETANGULO: %0.3lf\n", aRet);
+    
+ 
+ 
+    return 0;
+}
