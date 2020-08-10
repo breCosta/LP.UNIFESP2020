@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+ 
+int main() {
+    float x1, y1, x2, y2, p1, p2, distancia; // valores de x e y e valores dos pontos
+    scanf("%f %f", &x1, &y1);
+    scanf("%f %f", &x2, &y2);
+    distancia=sqrt(pow(x2-x1,2)+pow(y2-y1,2)); //sqrt raiz quadrada e pow potencia
+    printf("%0.4f\n", distancia);
+ 
+ 
+    return 0;
+}
