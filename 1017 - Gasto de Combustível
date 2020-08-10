@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+int main() {
+    int tempoHoras, velMedia; // velocidade em km/h
+    float litros, distancia;
+    scanf("%d %d", &tempoHoras, &velMedia);
+    distancia=tempoHoras*velMedia; // calculo distancia
+    litros=distancia/12; //cada 12km usa 1litro
+    printf("%.3f\n", litros);
+ 
+ 
+    return 0;
+}
