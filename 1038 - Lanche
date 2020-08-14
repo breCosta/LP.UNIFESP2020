@@ -1,0 +1,28 @@
+#include <stdio.h>
+ 
+int main() {
+  int cod, qntd;
+  double soma;
+  scanf("%d %d", &cod, &qntd);
+  if (cod==1) {
+    soma=qntd*4;
+  }
+  if (cod==2) {
+    soma=qntd*4.5;
+  }
+  if (cod==3){
+    soma=qntd*5;
+
+  }
+  if (cod==4){
+    soma=qntd*2;
+
+  }
+  if (cod==5){
+    soma=qntd*1.5;
+  }
+  printf("Total: R$ %0.2lf\n", soma);
+
+ 
+    return 0;
+}
