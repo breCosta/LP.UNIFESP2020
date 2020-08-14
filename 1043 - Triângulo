@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+ double A, B, C, peri, area;
+ scanf("%lf %lf %lf", &A, &B, &C);
+ if ((C>A-B && C<A+B) && (B>A-C && B<A+C) && (A>B-C && A<B+C)) {
+  peri=A+B+C;
+  printf("Perimetro = %.1lf\n", peri);
+ } else {
+   area=((A+B)*C)/2;
+   printf("Area = %.1lf\n", area);
+ }
+    return 0;
+}
