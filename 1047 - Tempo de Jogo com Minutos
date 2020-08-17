@@ -1,0 +1,63 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+  int hi, mi, hf, mf, totalh, totalm; //h horas m minutos i inicial f final
+  scanf("%d %d %d %d", &hi, &mi, &hf, &mf);
+  if(hi<hf){
+    totalh=hf-hi;
+
+  if(mf<mi){
+    totalm=mf+(60-mi);
+  }
+  if(mi<mf){
+    totalm=mf-mi;
+  }
+  }
+
+  if(hf<hi){
+    totalh=hf+(24-hi);
+  
+  if(mf<mi){
+    totalm=mf+(60-mi);
+  }
+  if(mi<mf){
+    totalm=mf-mi;
+  }
+  }
+
+  if(hf>hi && mf<mi){
+    totalh=(hf-hi)-1;
+    totalm=mf+(60-mi);
+
+  }
+
+  if(hi>hf && mf<mi){
+    totalh=hf+(24-hi)-1;
+    totalm=mf+(60-mi);
+  }
+  
+  if(hi==hf && mi==mf && hi==hf){
+   totalh=24;
+   totalm=0;
+  }
+ 
+  if(hi==hf && mf>mi){
+    totalh=0;
+    totalm=mf-mi;
+  }
+  if(hi==hf && mi>mf){
+    totalh=23;
+    totalm=mf+(60-mi);
+  }
+
+  if(totalh==1 && mf<mi){
+   totalh--;
+   totalm=mf+(60-mi);
+}
+
+printf("O JOGO DUROU %d HORA(S) ", totalh);
+printf("E %d MINUTO(S)\n", totalm);
+   
+   return 0;
+}
