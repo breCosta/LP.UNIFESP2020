@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {  
+  double x, imposto8, imposto18, imposto28, aux;
+  scanf("%lf", &x);
+  if (x<=2000.00){
+    printf("Isento\n");
+  }
+  if(x>2000.00 && x<=3000.00){
+    imposto8=(x-2000)*0.08;
+    printf("R$ %.2lf\n", imposto8);
+  }
+  if(x>3000.00 && x<=4500.00){
+    imposto8=(x-2000)*0.08;
+    imposto18=(x-3000)*0.10;
+    printf("R$ %.2lf\n", imposto8+imposto18);
+  }
+  if(x>4500.00){
+    imposto8=(x-2000)*0.08;
+    imposto18=(x-3000)*0.10;
+    imposto28=(x-4500)*0.10;
+    printf("R$ %.2lf\n", imposto8+imposto18+imposto28);
+  }
+  return 0;
+}
