@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, c, d, e, par, impar, posi, neg;
+  posi=0; //usar >0 para definir n positivo
+  neg=0; //usar <0 para definir n negativo
+  impar=0; //usar else para os casos de nao positivos
+  par=0; //usar n%2==0 e n==0 para definir os pares
+  scanf("%d %d %d %d %d", &a,&b,&c,&d,&e);
+  if(a>0){
+    posi++;
+  } else if (a<0){
+     neg++; 
+    }
+  if(a%2==0 || a==0){
+    par++;
+  } else {
+     impar++;
+    }
+
+  if(b>0){
+    posi++;
+  } else if (b<0){
+     neg++; 
+    }
+  if(b%2==0 || b==0){
+    par++;
+  } else {
+     impar++;
+    }
+
+  if(c>0){
+    posi++;
+  } else if (c<0){
+     neg++; 
+    }
+  if(c%2==0 || c==0){
+    par++;
+  } else {
+     impar++;
+    }
+  
+  if(d>0){
+    posi++;
+  } else if (d<0){
+     neg++; 
+    }
+  if(d%2==0 || d==0){
+    par++;
+  } else {
+     impar++;
+    }
+
+  if(e>0){
+    posi++;
+  } else if (e<0){
+    neg++; 
+  }
+  if(e%2==0 || e==0){
+    par++;
+  } else {
+     impar++;
+    }
+  
+  printf("%d valor(es) par(es)\n", par);
+  printf("%d valor(es) impar(es)\n", impar);
+  printf("%d valor(es) positivo(s)\n", posi);
+  printf("%d valor(es) negativo(s)\n", neg);
+  
+  
+  return 0;
+}
