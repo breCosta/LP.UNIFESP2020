@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main(void) {
+  double a,b,c,d,e,f, media;
+  int positivo;
+  media=0;
+  scanf("%lf %lf %lf %lf %lf %lf", &a, &b, &c, &d, &e, &f);
+    //a media recebera o valor de cada variavel somada ao seu valor anterior, depois sera dividida pelo total de positivos
+  if(a>0){
+    positivo++;
+    media=a;
+  }
+  if(b>0){
+    positivo++;
+    media=media+b;
+  }
+  if(c>0){
+    positivo++;
+    media=media+c;
+  }
+  if(d>0){
+    positivo++;
+    media=media+d;
+  }
+  if(e>0){
+    positivo++;
+    media=media+e;
+  }
+  if(f>0){
+    positivo++;
+    media=media+f;
+  }
+  
+  media=(media/positivo);
+  printf("%d valores positivos\n", positivo);
+  printf("%.1lf\n", media);
+
+  return 0;
+}
