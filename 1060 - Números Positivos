@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void) {
+  double a,b,c,d,e,f;
+  int positivo;
+  scanf("%lf %lf %lf %lf %lf %lf", &a, &b, &c, &d, &e, &f);
+    // utilizando o positivo++ para somar 1 a variavel p cada numero positivo.
+  if(a>0){
+    positivo++;
+  }
+  if(b>0){
+    positivo++;
+  }
+  if(c>0){
+    positivo++;
+  }
+  if(d>0){
+    positivo++;
+  }
+  if(e>0){
+    positivo++;
+  }
+  if(f>0){
+    positivo++;
+  }
+  printf("%d valores positivos\n", positivo);
+  
+  return 0;
+}
